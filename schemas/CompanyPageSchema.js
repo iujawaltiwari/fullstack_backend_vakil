@@ -1,0 +1,108 @@
+const mongoose= require("mongoose");
+
+const CompanyPageSchema = new mongoose.Schema({
+    name:{
+        type:String
+    },
+    city:{
+        type:String,
+        default:""
+    },
+    state:{
+        type:String,
+        default:""
+    },
+    country:{
+        type:String,
+        default:""
+    },
+    website:{
+        type:String
+    },
+    industry:{
+        type:String,
+        default:""
+    },
+    subindustry:{
+        type:String,
+        default:""
+    },
+    companysize:{
+        type:String
+    },
+    companytype:{
+        type:String
+    },
+    logo:{
+        img_id:{
+            type:String
+        },
+        img_url:{
+            type:String
+        }
+    },
+    background:{
+        img_id:{
+            type:String,
+            default:""
+        },
+        img_url:{
+            type:String,
+            default:""
+        }
+    },
+    address:{
+        type:String,
+        default:""
+    },
+    title:{
+        type:String,
+        default:""
+    },
+    descript:{
+        type:String,
+        default:""
+    },
+    working:{
+        descript:{
+            type:String, 
+            default:""
+        },
+        img_id:{
+            type:String,
+            default:""
+        },
+        img_url:{
+            type:String,
+            default:""
+        }
+    },
+    headquarters:{
+        type:String,
+        default:""
+    },
+    phone:{
+        type:String,
+        default:""
+    },
+    specialities:{
+        type:String,
+        default:""
+    },
+    founded:{
+        type:String,
+        default:""
+    },
+    followers:[{
+        type: String,
+        default:[]
+    }],
+    userId:{
+        type:String
+    }
+})
+
+//  17 varibales
+
+CompanyPage = mongoose.model("CompanyPage",CompanyPageSchema);
+module.exports=CompanyPage;

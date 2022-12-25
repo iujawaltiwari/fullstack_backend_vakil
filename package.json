@@ -1,0 +1,35 @@
+{
+  "name": "vakil",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "cloudinary": "^1.30.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "googleapis": "^109.0.1",
+    "js-to-ts-converter": "^0.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.19",
+    "tailwindcss-scrollbar": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.7",
+    "@types/node": "17.0.38",
+    "@types/react": "18.0.10",
+    "@types/react-dom": "18.0.5",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.7.2"
+  }
+}
